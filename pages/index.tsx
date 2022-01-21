@@ -1,12 +1,16 @@
-import Head from 'next/head'
-
-export default function Home() {
+import React from 'react';
+import Link from 'next/link';
+import {SearchCircleIcon, SearchIcon} from '@heroicons/react/outline';
+import {Navbar, Intro, Categories, Trending} from '../components'
+const index = () => {
   return (
-    <>
-    <div className='font-bold text-3xl'>
-      Hello there!
-    </div>
-    </>
-    
-  )
-}
+  <>
+    <Navbar />
+    <Intro />
+    <Categories />
+    <Trending />
+  </>
+  );
+};
+
+export default index;

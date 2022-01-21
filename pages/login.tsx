@@ -6,8 +6,8 @@ const Login = () => {
       <div className='flex items-center justify-between'>
 
           {/* img */}
-          <div className='hidden md:block h-screen w-2/4 bg-black'>
-              asd
+          <div className='hidden md:flex h-screen w-2/4 bg-yellow-300 items-center justify-center'>
+              <img className='w-96 h-96' src="./loginImg.png" alt="" />
           </div>
 
           {/* login cred */}
@@ -18,7 +18,11 @@ const Login = () => {
 
                 {/* <div className='flex text-5xl mb-7 font-semibold lg:text-7xl'> <p className='text-yellow-400'>Z</p><p>ED</p></div> */}
 
-                <img className='' src="./brand.png" />
+                <Link href="/">
+                    <a>
+                    <img className='' src="./brand.png" />
+                    </a>
+                </Link>
 
                 <div className='self-start mb-1 ml-1'>Email</div>
                 <input className='border-2 bg-yellow-100 border-gray-800 px-4 py-2 w-full rounded-full outline-none mb-3' />

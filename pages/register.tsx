@@ -6,8 +6,8 @@ const register = () => {
       <div className='flex items-center justify-between'>
 
           {/* img */}
-          <div className='hidden md:block h-screen w-2/4 bg-yellow-300'>
-              
+          <div className='hidden md:flex items-center justify-center h-screen w-2/4 bg-yellow-300'>
+          <img className='w-96 h-96' src="./registerImg.png" alt="" />
           </div>
 
           {/* login cred */}
@@ -18,7 +18,12 @@ const register = () => {
 
                 {/* <div className='flex text-5xl mb-7 font-semibold lg:text-7xl'> <p className='text-yellow-400'>Z</p><p>ED</p></div> */}
 
-                <img className='' src="./brand.png" />
+                <Link href="/">
+                    <a>
+                    <img className='' src="./brand.png" />
+                    </a>
+                </Link>
+                
 
                 <div className='self-start mb-1 ml-1'>Username</div>
                 <input className='border-2 bg-yellow-100 border-gray-800 px-4 py-2 w-full rounded-full outline-none mb-3' />
@@ -32,7 +37,7 @@ const register = () => {
                 <div className='self-start mb-1 ml-1'>Confirm password</div>
                 <input className='border-2 bg-yellow-100 border-gray-800 px-4 py-2 w-full rounded-full outline-none' />
 
-                <button type='button' className='border-2 bg-yellow-300 border-gray-800 px-8 py-2 rounded-full mt-7'>Login</button>
+                <button type='button' className='border-2 bg-yellow-300 border-gray-800 px-8 py-2 rounded-full mt-7'>Register</button>
 
                 
 
